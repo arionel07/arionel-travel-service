@@ -4,7 +4,7 @@ export const places = [
 		name: 'Meona',
 		country: 'Italy',
 		bg: 'fi fi-it',
-		type: 'mountains', // mountains | sea | forest
+		type: 'sea', // mountains | sea | forest
 		weather: 'sunny',
 		price: {
 			from: 120,
