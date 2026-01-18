@@ -1,0 +1,92 @@
+.home {
+	width: 450px;
+	height: 100vh;
+	margin-top: 30px;
+	background-image: url('../../assets/img/bg.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+}
+.burger {
+	display: flex;
+	flex-direction: column;
+	padding-top: 30px;
+	margin-left: 40px;
+}
+.span1,
+.span2 {
+	cursor: pointer;
+	position: relative;
+	padding-top: 12px;
+}
+.span1::after,
+.span2::after {
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 2px;
+	background-color: black;
+}
+.span2::after {
+	width: 32px;
+}
+.home h1 {
+	padding-top: 70px;
+	font-size: 52px;
+	width: 300px;
+	line-height: 1.3;
+	margin-left: 40px;
+	font-weight: 500;
+}
+.svg {
+	position: relative;
+}
+.svg svg {
+	width: 55px;
+	height: 55px;
+	transform: rotate(-90deg);
+}
+.box {
+	text-decoration: none;
+	color: black;
+	background: white;
+	padding: 25px;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	width: 325px;
+	margin-top: 255px;
+	margin-left: 15px;
+}
+.box h4 {
+	font-size: 26px;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+.countries {
+	margin-top: 20px;
+	display: flex;
+}
+.countrie {
+	position: relative;
+	width: 32px;
+	height: 32px;
+}
+.countrie span {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+}
+.fi {
+	background-size: cover;
+}
+.countrie:nth-child(2) {
+	right: 6px;
+}
+.countrie:nth-child(3) {
+	right: 12px;
+}

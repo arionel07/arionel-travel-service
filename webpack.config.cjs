@@ -1,10 +1,5 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const dotenv = require('dotenv')
-
-const { DefinePlugin } = require('webpack')
-
-const env = dotenv.config().parsed
 
 module.exports = {
 	entry: './src/index.js',
@@ -36,9 +31,6 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new DefinePlugin({
-			'process.env': JSON.stringify(env)
-		}),
 		new HtmlWebpackPlugin({
 			template: './src/index.html'
 		})
@@ -50,7 +42,14 @@ module.exports = {
 		plugins: [require('pnp-webpack-plugin').topLevel]
 	},
 	devServer: {
-		static: './dist',
+		static: [
+			{
+				directory: path.resolve(__dirname, './dist')
+			},
+			{
+				directory: path.resolve(__dirname, '/src')
+			}
+		],
 		port: 4200,
 		open: true,
 		historyApiFallback: true

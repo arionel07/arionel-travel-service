@@ -34,7 +34,7 @@ const RAW_RUNTIME_STATE =
           ["axios", "npm:1.13.2"],\
           ["babel-loader", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:10.0.0"],\
           ["css-loader", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:7.1.2"],\
-          ["dotenv", "npm:17.2.3"],\
+          ["flag-icons", "npm:7.5.0"],\
           ["html-loader", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:5.1.0"],\
           ["html-webpack-plugin", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:5.6.5"],\
           ["pnp-webpack-plugin", "npm:1.7.0"],\
@@ -3971,15 +3971,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["dotenv", [\
-      ["npm:17.2.3", {\
-        "packageLocation": "../../../../.yarn/berry/cache/dotenv-npm-17.2.3-2f9ab93ea1-10c0.zip/node_modules/dotenv/",\
-        "packageDependencies": [\
-          ["dotenv", "npm:17.2.3"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["dunder-proto", [\
       ["npm:1.0.1", {\
         "packageLocation": "../../../../.yarn/berry/cache/dunder-proto-npm-1.0.1-90eb6829db-10c0.zip/node_modules/dunder-proto/",\
@@ -4381,6 +4372,15 @@ const RAW_RUNTIME_STATE =
           ["find-up", "npm:5.0.0"],\
           ["locate-path", "npm:6.0.0"],\
           ["path-exists", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["flag-icons", [\
+      ["npm:7.5.0", {\
+        "packageLocation": "../../../../.yarn/berry/cache/flag-icons-npm-7.5.0-8a3d48073e-10c0.zip/node_modules/flag-icons/",\
+        "packageDependencies": [\
+          ["flag-icons", "npm:7.5.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6961,7 +6961,7 @@ const RAW_RUNTIME_STATE =
           ["axios", "npm:1.13.2"],\
           ["babel-loader", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:10.0.0"],\
           ["css-loader", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:7.1.2"],\
-          ["dotenv", "npm:17.2.3"],\
+          ["flag-icons", "npm:7.5.0"],\
           ["html-loader", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:5.1.0"],\
           ["html-webpack-plugin", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:5.6.5"],\
           ["pnp-webpack-plugin", "npm:1.7.0"],\

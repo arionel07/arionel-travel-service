@@ -18,7 +18,7 @@
 		"axios": "^1.13.2",
 		"babel-loader": "^10.0.0",
 		"css-loader": "^7.1.2",
-		"dotenv": "^17.2.3",
+		"flag-icons": "^7.5.0",
 		"html-loader": "^5.1.0",
 		"html-webpack-plugin": "^5.6.5",
 		"pnp-webpack-plugin": "^1.7.0",
