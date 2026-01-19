@@ -129,19 +129,21 @@
 
 .offers {
 	padding: 24px;
-	background: #f9faf7;
-	border-radius: 24px;
 	max-width: 100%;
 }
 
 .offers-header {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 16px;
+	margin-left: 25px;
+	color: #8b8c89;
 }
-
+.offers-text {
+	font-size: 20px;
+}
 .offers-next {
+	margin-left: 20px;
 	font-size: 24px;
 	background: none;
 	border: none;
@@ -158,16 +160,16 @@
 	transition: transform 0.4s ease;
 }
 
-.card {
+.hotels {
 	min-width: 360px;
 	border-radius: 24px;
 	overflow: hidden;
-	background: #fff;
 }
 
-.card img {
+.hotels img {
 	width: 100%;
 	height: 220px;
+	border-radius: 24px;
 	object-fit: cover;
 }
 
@@ -183,7 +185,7 @@
 	align-items: center;
 	background: #8bc34a;
 	color: #fff;
-	padding: 6px 12px;
+	padding: 8px 20px;
 	border-radius: 20px;
 	font-weight: 600;
 }

@@ -30,11 +30,16 @@ export default function placePage() {
 	//bottom
 	const track = page.querySelector('.slider-track')
 	const nextBtn = page.querySelector('.offers-next')
-	const card = page.querySelector('.card')
+	const card = page.querySelector('.hotels')
+
+	const like = new URL(
+		'../../assets/icon/like-svgrepo-com(1).svg',
+		import.meta.url
+	)
 
 	//slider
 
-	const gap = 342
+	const gap = 362
 	const cardWidth = card.offsetWidth + gap
 
 	let position = 0
@@ -58,6 +63,34 @@ export default function placePage() {
 
 		navigate('/places')
 	})
+
+	const renderPlaces = hotels => {
+		track.innerHTML = hotels
+			.map(
+				hotel => `
+				<div class="hotels">
+					<img
+						src="${hotel.image}"
+						class="hotels-img"
+						alt=""
+					/>
+					<div class="rating">
+						<span class="score">
+							<div class="score-svg">
+								<img 
+									src="${like}"
+									alt=""
+								/>
+							</div>
+							${hotel.overlook}
+						</span>
+						<span class="stars">${hotel.star}</span>
+					</div>
+				</div>
+			`
+			)
+			.join('')
+	}
 
 	const params = new URLSearchParams(window.location.search)
 	const id = params.get('id')
@@ -108,6 +141,7 @@ export default function placePage() {
 			praise2.innerHTML = `<div class="${color}"></div>`
 
 			// bottom
+			renderPlaces(place.hotels)
 		} catch (error) {
 			title.textContent = 'Error Loading page'
 		}

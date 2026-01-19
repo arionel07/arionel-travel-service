@@ -16,19 +16,19 @@ export const places = [
 		hotels: [
 			{
 				id: 1,
-				image: 'faw',
+				image: new URL('../assets/img/hotel/hotel1.jpg', import.meta.url).href,
 				overlook: 9.9,
 				star: '★★★★★'
 			},
 			{
 				id: 2,
-				image: 'faw',
+				image: new URL('../assets/img/hotel/hotel2.webp', import.meta.url).href,
 				overlook: 9.0,
 				star: '★★★★☆'
 			},
 			{
 				id: 3,
-				image: 'faw',
+				image: new URL('../assets/img/hotel/hotel4.jpg', import.meta.url).href,
 				overlook: 9.1,
 				star: '★★★★☆'
 			}
@@ -51,19 +51,19 @@ export const places = [
 		hotels: [
 			{
 				id: 1,
-				image: 'faw',
+				image: new URL('../assets/img/hotel/hotel4.jpg', import.meta.url).href,
 				overlook: 9.3,
 				star: '★★★★★'
 			},
 			{
 				id: 2,
-				image: 'faw',
+				image: new URL('../assets/img/hotel/hotel2.webp', import.meta.url).href,
 				overlook: 8.8,
 				star: '★★★☆☆'
 			},
 			{
 				id: 3,
-				image: 'faw',
+				image: new URL('../assets/img/hotel/hotel3.jpg', import.meta.url).href,
 				overlook: 9.1,
 				star: '★★★★☆'
 			}
@@ -86,19 +86,19 @@ export const places = [
 		hotels: [
 			{
 				id: 1,
-				image: 'faw',
+				image: new URL('../assets/img/hotel/hotel3.jpg', import.meta.url).href,
 				overlook: 9.2,
 				star: '★★★★☆'
 			},
 			{
 				id: 2,
-				image: 'faw',
+				image: new URL('../assets/img/hotel/hotel5.jpg', import.meta.url).href,
 				overlook: 8.9,
 				star: '★★★★☆'
 			},
 			{
 				id: 3,
-				image: 'faw',
+				image: new URL('../assets/img/hotel/hotel1.jpg', import.meta.url).href,
 				overlook: 9.7,
 				star: '★★★★★'
 			}
