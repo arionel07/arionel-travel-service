@@ -2,6 +2,8 @@ import template from './place.html'
 import './place.css'
 import { getPlaces } from '../../api/travel.service.js'
 import { navigate } from '../../router/navigate.js'
+import Swiper from 'swiper'
+import 'swiper/css'
 
 export default function Places() {
 	const wrapper = document.createElement('div')
@@ -9,11 +11,53 @@ export default function Places() {
 
 	const container = wrapper.querySelector('.places')
 	const link = wrapper.querySelector('.back')
+	const categoryButtons = wrapper.querySelectorAll('[data-category]')
+	const slider = wrapper.querySelector('.place-categories')
+
+	let isDown = false
+	let startX
+	let scrollLeft
+
+	slider.addEventListener('mousedown', e => {
+		isDown = true
+		slider.classList.add('dragging')
+		startX = e.pageX - slider.offsetLeft
+		scrollLeft = slider.scrollLeft
+	})
+
+	slider.addEventListener('mouseleave', () => {
+		isDown = false
+	})
+	slider.addEventListener('mouseup', () => {
+		isDown = false
+	})
+	slider.addEventListener('mousemove', e => {
+		if (!isDown) {
+			return e.preventDefault()
+		}
+
+		const x = e.pageX - slider.offsetLeft
+		const walk = (x - startX) * 1.5
+		slider.scrollLeft = scrollLeft - walk
+	})
+
+	let allPlaces = []
+	let activeCategory = 'all'
 
 	link.addEventListener('click', e => {
 		e.preventDefault()
 
 		navigate('/')
+	})
+
+	categoryButtons.forEach(btn => {
+		btn.addEventListener('click', () => {
+			activeCategory = btn.dataset.category
+			categoryButtons.forEach(b => b.classList.remove('active'))
+			btn.classList.add('active')
+
+			filterAndRender()
+		})
 	})
 
 	const renderPlace = places => {
@@ -59,10 +103,34 @@ export default function Places() {
 			.join('')
 	}
 
-	const loadPlaces = async () => {
-		const places = await getPlaces()
-		renderPlace(places)
+	function filterAndRender() {
+		let filtered = allPlaces
+
+		if (activeCategory !== 'all') {
+			filtered = allPlaces.filter(place => place.type === activeCategory)
+		}
+
+		renderPlace(filtered)
 	}
+
+	const loadPlaces = async () => {
+		try {
+			allPlaces = await getPlaces()
+			filterAndRender()
+		} catch (error) {
+			container.innerHTML = '<p>Error loading places</p>'
+		}
+	}
+
+	container.addEventListener('click', e => {
+		e.preventDefault()
+		const card = e.target.closest('.card')
+
+		if (!card) return
+
+		const id = card.dataset.id
+		navigate(`/place?id=${id}`)
+	})
 
 	loadPlaces()
 

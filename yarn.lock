@@ -5103,6 +5103,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"swiper@npm:^12.0.3":
+  version: 12.0.3
+  resolution: "swiper@npm:12.0.3"
+  checksum: 10c0/a854531791ba45cb0f6086904a99878fd207b42024820df68fbf64e01c20d542438c023ec4765b223f4dbffabf6858d311ec749bdca4ea4b4a7b74150a010162
+  languageName: node
+  linkType: hard
+
 "tapable@npm:^2.0.0, tapable@npm:^2.2.0, tapable@npm:^2.3.0":
   version: 2.3.0
   resolution: "tapable@npm:2.3.0"
@@ -5216,6 +5223,7 @@ __metadata:
     html-webpack-plugin: "npm:^5.6.5"
     pnp-webpack-plugin: "npm:^1.7.0"
     style-loader: "npm:^4.0.0"
+    swiper: "npm:^12.0.3"
     webpack: "npm:^5.104.1"
     webpack-cli: "npm:^6.0.1"
     webpack-dev-server: "npm:^5.2.3"

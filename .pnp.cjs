@@ -39,6 +39,7 @@ const RAW_RUNTIME_STATE =
           ["html-webpack-plugin", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:5.6.5"],\
           ["pnp-webpack-plugin", "npm:1.7.0"],\
           ["style-loader", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:4.0.0"],\
+          ["swiper", "npm:12.0.3"],\
           ["travel-service", "workspace:."],\
           ["webpack", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:5.104.1"],\
           ["webpack-cli", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:6.0.1"],\
@@ -6815,6 +6816,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["swiper", [\
+      ["npm:12.0.3", {\
+        "packageLocation": "../../../../.yarn/berry/cache/swiper-npm-12.0.3-2debafdbb3-10c0.zip/node_modules/swiper/",\
+        "packageDependencies": [\
+          ["swiper", "npm:12.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["tapable", [\
       ["npm:2.3.0", {\
         "packageLocation": "../../../../.yarn/berry/cache/tapable-npm-2.3.0-905b9634e0-10c0.zip/node_modules/tapable/",\
@@ -6966,6 +6976,7 @@ const RAW_RUNTIME_STATE =
           ["html-webpack-plugin", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:5.6.5"],\
           ["pnp-webpack-plugin", "npm:1.7.0"],\
           ["style-loader", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:4.0.0"],\
+          ["swiper", "npm:12.0.3"],\
           ["travel-service", "workspace:."],\
           ["webpack", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:5.104.1"],\
           ["webpack-cli", "virtual:040a1a3707a86a16a3fbee03c0d9e502e3aacba191a502d5bffe8ee0e806886b01cdd15482bcf8ffe66bf6a733ec58eb8e716c2ba904e27090f84ee5cca414dc#npm:6.0.1"],\
