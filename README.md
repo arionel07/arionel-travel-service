@@ -4,6 +4,8 @@
 > is a single-page / multi-page travel service app built to practice JavaScript,
 > modular architecture.
 
+---
+
 ## 🚀 Features
 
 - View a list of travel destinations (places) with basic information (name,
@@ -14,3 +16,17 @@
 - Dynamic weather icons based on the destination's weather
 - SPA-like navigation using a lightweight router (no frameworks)
 - Async data fetching with mock API (fake backend)
+
+---
+
+---
+
+## Technologies
+
+- JavaScript (ES6+)
+- HTML5 / CSS3
+- Custom scroll slider
+- Webpack (module bundling, multiple pages support)
+- Axios (for async HTTP requests, used for mock API)
+- Fake API for front-end practice
+- Vanilla JS routing
